@@ -1,0 +1,16 @@
+.bg-top {
+  background:url(../../assets/img/background.jpg);
+  background-size:cover;
+  background-position:center;
+  padding-right:0px;
+  padding-left:0px;
+}
+
+.hover {
+  background-color:rgba(255,255,255,0.72);
+}
+
+.header-title {
+  padding:160px 50px;
+}
+
