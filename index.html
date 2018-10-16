@@ -40,38 +40,63 @@
             </div>
         </div>
     </div>
+    <div class="features-clean">
+            <div class="container">
+                <!--<div class="intro">
+                    <h2 class="text-center">What is Threadify?</h2>
+                    <p class="text-center" style="font-size: 19px;">This is a web application for planning your Twitter threads, take a look!</p>
+                </div>-->
+                <div class="separator_header"></div>
+                <div class="row features">
+                    <div class="col-sm-6 col-lg-4 item" data-aos="fade-left" data-aos-duration="400" data-aos-delay="200" data-aos-once="true">
+                        <i class="fa fa-hand-scissors-o icon"></i>
+                        <h3 class="name">Split large texts</h3>
+                        <p class="description">The application process the text, and split it into 280 character tweets.</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 item" data-aos="fade-left" data-aos-duration="650" data-aos-delay="400" data-aos-once="true">
+                        <i class="fa fa-flash icon"></i>
+                        <h3 class="name">Fast</h3>
+                        <p class="description">It's done instantly, coud it be any faster?</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 item" data-aos="fade-left" data-aos-duration="650" data-aos-delay="800" data-aos-once="true">
+                        <i class="fa fa-list-ul icon"></i>
+                        <h3 class="name">Customizable</h3>
+                        <p class="description">Choose if you want enumeration in the tweets like: 1) ... 2) ...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     <div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <h5 class="text-center" style="margin:37px 0px;">Write / paste here the complete text:</h5>
-                    <div class="form-group"><textarea rows="4" placeholder="Write here or past the complete text to convert..." class="form-control"></textarea><button class="btn btn-dark bt-submit" type="submit"> Process text <i class="fa fa-play-circle"></i></button></div>
+                    <div class="form-group">
+                        <textarea rows="4" placeholder="Write here or past the complete text to convert..." id="full-text" class="form-control">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam congue purus. Praesent non pellentesque erat, a vulputate nunc. Mauris elementum rhoncus venenatis. Ut efficitur ullamcorper diam, a aliquet nulla bibendum fringilla. Sed velit ex, luctus eget urna sed, egestas elementum eros. Fusce congue et lacus sit amet volutpat. Quisque efficitur lectus in odio vestibulum, at tempus quam lacinia.  Nam in vehicula odio. Aenean at rutrum felis. Praesent non pretium massa, a commodo sem. Proin maximus ipsum id ex aliquet pellentesque. Nullam augue augue, accumsan sed semper eget, consectetur ut nulla. In eget imperdiet nulla. Duis malesuada, nisi nec fermentum aliquet, ante enim auctor justo, ut condimentum ante ex ac metus. Phasellus commodo tincidunt efficitur.</textarea>
+                        <div class="submit-section">
+                            <span><i class="fa fa-get-pocket green"></i> <span id="num_characters"> </span> characters&nbsp;&nbsp;</span>
+                            <button class="btn btn-dark" type="submit" id="bt-submit-text"> Process text <i class="fa fa-play-circle"></i></button>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="row result">
+                        <div class="col-md-3">
+                            <h3>Settings</h3>
+                            <label><input type="checkbox" value="enumeration"> Enumerate tweets</label>
+                        </div>
+                        <div class="col-md-9">
+                                <div class="top_separator">
+                                    <h4>Split result:</h4>
+                                </div>
+                                <textarea rows="2" cols="30" placeholder="Write here or past the complete text to convert..." id="text_result_1" class="form-control result_textarea">Lorem ipsum dolor sit amet, </textarea>
+                                <button class="btn btn-dark bt_result" type="submit" id="bt-copy-1" onclick="copy(1)"> Copy text <i class="fa fa-copy"></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="features-clean">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">What is Threadify?</h2>
-                <p class="text-center" style="font-size: 19px;">It's a web application for planning your Twitter threads.</p>
-            </div>
-            <div class="row features">
-                <div class="col-sm-6 col-lg-4 item" data-aos="fade-left" data-aos-duration="400" data-aos-delay="200" data-aos-once="true"><i class="fa fa-flash icon"></i>
-                    <h3 class="name">Fast</h3>
-                    <p class="description">It's done instantly, coud it be faster?</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 item" data-aos="fade-left" data-aos-duration="650" data-aos-delay="400" data-aos-once="true"><i class="fa fa-hand-scissors-o icon"></i>
-                    <h3 class="name">Split large texts</h3>
-                    <p class="description">The application process the text, and split it into 280 character tweets.</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 item" data-aos="fade-left" data-aos-duration="650" data-aos-delay="800" data-aos-once="true"><i class="fa fa-list-ul icon"></i>
-                    <h3 class="name">Customizable</h3>
-                    <p class="description">Choose if you want enumeration in the tweets like: 1) ... 2) ...</p>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="footer-dark">
         <footer>
             <div class="container">
@@ -105,6 +130,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bs-animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="assets/js/threadify.js"></script>
 </body>
 
 </html>

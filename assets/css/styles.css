@@ -14,9 +14,35 @@
   padding: 160px 50px;
 }
 
-.bt-submit {
+.submit-section {
   margin: 16px 0px;
   display: inline-block;
   float: right;
 }
+.separator_header{
+  padding-top: 75px;
+}
 
+.clear{
+  clear: both;
+  float: none;
+}
+.top_separator{
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.result{
+  margin-bottom: 50px;
+}
+.result_textarea{
+  width: 70%;
+  display: inline;
+}
+.bt_result{
+  vertical-align: top;
+}
+
+.green{
+  color:rgb(38, 189, 38);
+}
