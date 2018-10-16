@@ -14,3 +14,9 @@
   padding:160px 50px;
 }
 
+.bt-submit {
+  margin:16px 0px;
+  display:inline-block;
+  float:right;
+}
+
