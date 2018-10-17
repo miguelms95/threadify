@@ -26,7 +26,7 @@
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Index </a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="http://miguelms.es" target="_blank">About</a></li>
+                        <!--<li class="nav-item" role="presentation"><a class="nav-link" href="http://miguelms.es" target="_blank">About</a></li>-->
                         <li class="nav-item" role="presentation"><a class="nav-link" href="http://miguelms.es" target="_blank">Contact </a></li>
                     </ul>
             </div>
@@ -79,7 +79,7 @@
                         </div>
                         <div class="clear"></div>
                     </div>
-                    <div class="row result">
+                    <div class="row result" id="result-wrapper">
                         <div class="col-md-3">
                             <h3>Settings</h3>
                             <label><input type="checkbox" value="enumeration"> Enumerate tweets</label>
@@ -88,7 +88,10 @@
                                 <div class="top_separator">
                                     <h4>Split result:</h4>
                                 </div>
-                                <div id="text-area-results"></div>
+                                <div id="text-area-results">
+                                    <div class="result_textarea"></div>
+                                    
+                                </div>
                         </div>
                     </div>
                 </div>

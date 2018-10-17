@@ -19,8 +19,16 @@ $('#bt-submit-text').click(function () {
 });
 
 function splitter(string) {
+    // preconditions
+    parts_text = []
     var numTweets = string.length / 280
     var realTweets = 0;
+
+    // for a second execution, the previous texareasmust be destroyed
+    $("#text-area-results").empty() 
+
+    // First of all, display the container
+    $("#result-wrapper").css('display','inline-flex')
 
     if (Math.round(numTweets) < numTweets)
         realTweets = Math.round(numTweets) + 1

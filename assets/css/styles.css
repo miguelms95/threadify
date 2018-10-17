@@ -34,7 +34,14 @@
 
 .result{
   margin-bottom: 50px;
+  
 }
+
+#result-wrapper{
+  animation: ease-in-out 100ms;
+  display: none;
+}
+
 .result_textarea{
   width: 70%;
   display: inline;
