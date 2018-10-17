@@ -11,7 +11,7 @@
 }
 
 .header-title {
-  padding: 160px 50px;
+  padding: 185px 50px;
 }
 
 .submit-section {
@@ -41,6 +41,7 @@
 }
 .bt_result{
   vertical-align: top;
+  margin-left: 16px;
 }
 
 .green{
