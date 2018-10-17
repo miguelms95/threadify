@@ -28,7 +28,7 @@ function splitter(string) {
     $("#text-area-results").empty() 
 
     // First of all, display the container
-    $("#result-wrapper").css('display','inline-flex')
+    $("#result-wrapper").css('display','flex')
 
     if (Math.round(numTweets) < numTweets)
         realTweets = Math.round(numTweets) + 1
