@@ -24,7 +24,7 @@ function splitter(string) {
     var numTweets = string.length / 280
     var realTweets = 0;
 
-    // for a second execution, the previous texareasmust be destroyed
+    // for a second execution, the previous texarea must be destroyed
     $("#text-area-results").empty() 
 
     // First of all, display the container
@@ -40,14 +40,12 @@ function splitter(string) {
     // With word wrap. I've to improve this later.
 
     var x = 0;
-    var y = 280;
+    var tweet_max_length = 280;
 
-
-
-    while (string.substr(x, y) != "") {
-        parts_text.push(string.substr(x, y))
+    while (string.substr(x, tweet_max_length) != "") {
+        console.log(string.substr(x, tweet_max_length))
+        parts_text.push(string.substr(x, tweet_max_length))
         x += 280
-        y += 280
     }
 
     for (i = 0; i < realTweets; i++) {
